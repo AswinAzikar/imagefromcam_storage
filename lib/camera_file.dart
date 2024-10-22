@@ -1,10 +1,11 @@
 import 'dart:io';
 import 'dart:typed_data';
-import 'package:aswn/crop_image.dart';
+
 import 'package:flutter/material.dart';
 import 'package:camera_universal/camera_universal.dart';
 import 'package:image/image.dart' as img;
 import 'package:image_picker/image_picker.dart'; // Import image_picker
+import 'package:imagefromcam_storage/crop_image.dart';
 
 import 'package:path_provider/path_provider.dart';
 

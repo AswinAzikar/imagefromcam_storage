@@ -2,12 +2,12 @@
 
 import 'dart:io';
 
-import 'package:aswn/home_screen.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:camera_universal/camera_universal.dart';
 import 'package:crop_image/crop_image.dart';
+import 'package:imagefromcam_storage/home_screen.dart';
 
 void main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();

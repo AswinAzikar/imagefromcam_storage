@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
+import 'package:imagefromcam_storage/home_screen.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:crop_your_image/crop_your_image.dart';
 
@@ -45,6 +46,12 @@ class _ImageCropperState extends State<ImageCropper> {
             );
 
             print('Image saved to: $filePath');
+
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => HomeScreen(
+                fileName: filePath,
+              ),
+            ));
           } catch (e) {
             print('Error saving image: $e');
             ScaffoldMessenger.of(context).showSnackBar(
