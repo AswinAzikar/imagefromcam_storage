@@ -118,6 +118,19 @@ class _CameraFileState extends State<CameraFile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        backgroundColor: Colors.transparent,
+        actions: [
+          IconButton(
+              onPressed: () => Navigator.pop(context),
+              icon: const Icon(
+                Icons.close,
+                color: Colors.white,
+              ))
+        ],
+      ),
+      extendBodyBehindAppBar: true,
       body: Camera(
         cameraController: cameraController,
         onCameraNotInit: (context) {

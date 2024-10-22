@@ -13,6 +13,7 @@ void main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(
     const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: HomeScreen(),
     ),
   );
